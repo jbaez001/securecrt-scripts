@@ -5,7 +5,7 @@ import re
 
 PATTERNS = [
     r"(?P<title>[a-zA-Z0-9_\-\.]+@[a-zA-Z0-9_\-\.]+)", # *nix user@host
-    r"(?P<title>^RP\/\d+\/RP[0-1]\/CPU[0-9]:[a-zA-Z0-9_\-\.]+)#", # ioxr
+    r"(?P<title>^RP\/\d+\/(?:RP|RSP)[0-1]\/CPU[0-9]:[a-zA-Z0-9_\-\.]+)#", # ioxr
     r"(?P<title>^[a-zA-Z0-9_\-\.]+)#\s" # ios/nx-os
 ]
 
